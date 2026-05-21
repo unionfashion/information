@@ -548,19 +548,58 @@ footer{
     text-align:center;
 
     padding:35px;
+
+    line-height:1.8;
 }
 
-   footer a:link, footer a:visited{
+/* LINKS */
+
+footer a:link,
+footer a:visited{
 
     color:#d7b4a4;
 
     text-decoration:none;
 
     margin:0 10px;
+
+    font-weight:500;
+
+    position:relative;
+
+    transition:0.3s;
 }
 
+/* HOVER EFFEKT */
+
 footer a:hover{
-    text-decoration:underline;
+
+    color:#ffffff;
+
+    text-decoration:none;
+}
+
+/* UNDERLINE ANIMATION */
+
+footer a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-4px;
+
+    width:0%;
+    height:2px;
+
+    background:#d7b4a4;
+
+    transition:0.3s;
+}
+
+footer a:hover::after{
+    width:100%;
 }
 /* =========================
    ANIMATION
