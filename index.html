@@ -590,6 +590,60 @@ nav a:hover::after{
     font-size:18px;
 }
 
+
+/* =========================
+   HOURS BÄR
+========================= */
+
+.hours-wrapper{
+
+    display:flex;
+
+    justify-content:center;
+    align-items:flex-end;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+}
+
+.hours-bear{
+
+    width:140px;
+
+    opacity:0.95;
+
+    transform:rotate(-5deg);
+
+    transition:0.35s;
+}
+
+.hours-bear img{
+    width:100%;
+    display:block;
+}
+
+.hours-bear:hover{
+    transform:rotate(0deg) scale(1.05);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .hours-wrapper{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .hours-bear{
+        width:110px;
+    }
+
+}
+
+
+   
 /* =========================
    FOOTER
 ========================= */
@@ -933,13 +987,7 @@ a:focus{
             Im Mittelpunkt unserer Arbeit stehen Kreativität, Teamgeist und ein zeitgemäßes Designverständnis. Wir lernen, wie man Produkte präsentiert, Kunden anspricht und gemeinsam im Team Lösungen entwickelt.
         </p>
 
-        <!-- FASHION BÄR -->
-
-        <div class="about-bear">
-
-            <img src="images/fashionbear.png" alt="Union Fashion Bear">
-
-        </div>
+       
 
     </div>
 
@@ -977,18 +1025,31 @@ a:focus{
 
     <h2>Unsere Öffnungszeiten</h2>
 
-    <div class="hours-box">
+    <div class="hours-wrapper">
 
-        <p>
+        <div class="hours-box">
 
-            <strong>Donnerstag:</strong>
-            14:00 – 16:30
+            <p>
 
-        </p>
+                <strong>Donnerstag:</strong>
+                14:00 – 16:30
+
+            </p>
+
+        </div>
+
+        <!-- FASHION BÄR -->
+
+        <div class="hours-bear">
+
+            <img src="images/fashionbear.png" alt="Union Fashion Bear">
+
+        </div>
 
     </div>
 
 </section>
+
 
 </main>
 
