@@ -643,6 +643,73 @@ nav a:hover::after{
 }
 
 
+/* =========================
+   HOURS LAYOUT FIX
+========================= */
+
+.hours-wrapper{
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    gap:80px;
+
+    flex-wrap:wrap;
+}
+
+/* TEXT BOX ZENTRIERT */
+.hours-box{
+
+    text-align:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    min-width:260px;
+}
+
+/* BÄR GRÖSSER + CLEAN */
+.hours-bear{
+
+    width:220px;
+
+    opacity:1;
+
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.15));
+
+    transform:rotate(-4deg);
+
+    transition:0.35s;
+}
+
+.hours-bear img{
+    width:100%;
+    display:block;
+
+    background:transparent;
+}
+
+.hours-bear:hover{
+    transform:rotate(0deg) scale(1.08);
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    .hours-wrapper{
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .hours-bear{
+        width:170px;
+    }
+}
+   
    
 /* =========================
    FOOTER
@@ -1030,15 +1097,11 @@ a:focus{
         <div class="hours-box">
 
             <p>
-
-                <strong>Donnerstag:</strong>
+                <strong>Donnerstag:</strong><br>
                 14:00 – 16:30
-
             </p>
 
         </div>
-
-        <!-- FASHION BÄR -->
 
         <div class="hours-bear">
 
