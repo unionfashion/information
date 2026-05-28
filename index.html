@@ -444,6 +444,60 @@ nav a:hover::after{
     margin-bottom:20px;
 }
 
+```css
+/* =========================
+   FASHION BÄR
+========================= */
+
+.about-text{
+    position:relative;
+}
+
+.about-bear{
+
+    position:absolute;
+
+    right:-20px;
+    bottom:-20px;
+
+    width:140px;
+
+    opacity:0.95;
+
+    transform:rotate(-6deg);
+
+    transition:0.35s;
+}
+
+.about-bear img{
+    width:100%;
+    display:block;
+}
+
+.about-bear:hover{
+    transform:rotate(0deg) scale(1.05);
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .about-bear{
+
+        position:relative;
+
+        right:auto;
+        bottom:auto;
+
+        margin-top:30px;
+
+        width:120px;
+    }
+
+}
+```
+
+   
 /* =========================
    MARKETPLACE
 ========================= */
@@ -853,27 +907,46 @@ a:focus{
 
 </section>
 
+```html
 <!-- ABOUT -->
 
 <section class="about" id="about">
 
     <img src="images/team.jpg" alt="Union Fashion Team">
 
-    <div>
+    <div class="about-text">
 
         <h2>Über Uns</h2>
 
-      <p>Union Fashion ist eine moderne Übungsfirma mit Schwerpunkt auf Mode, Trends und digitalem Handel.</p>
-         
-          <p>In Zusammenarbeit mit BOBS Fashion arbeiten wir an realitätsnahen Projekten, die uns einen praxisnahen Einblick in die Welt der Wirtschaft und der Modebranche ermöglichen.</p>
+        <p>
+            Union Fashion ist eine moderne Übungsfirma mit Schwerpunkt auf Mode, Trends und digitalem Handel.
+        </p>
 
-  <p>Unser Ziel ist es, wichtige Erfahrungen im Bereich Onlinehandel, Marketing und Unternehmensorganisation zu sammeln und dabei ein besseres Verständnis für die Abläufe in einem modernen Unternehmen zu entwickeln.</p>
+        <p>
+            In Zusammenarbeit mit BOBS Fashion arbeiten wir an realitätsnahen Projekten, die uns einen praxisnahen Einblick in die Welt der Wirtschaft und der Modebranche ermöglichen.
+        </p>
 
-  <p>Im Mittelpunkt unserer Arbeit stehen Kreativität, Teamgeist und ein zeitgemäßes Designverständnis. Wir lernen, wie man Produkte präsentiert, Kunden anspricht und gemeinsam im Team Lösungen entwickelt.</p>
+        <p>
+            Unser Ziel ist es, wichtige Erfahrungen im Bereich Onlinehandel, Marketing und Unternehmensorganisation zu sammeln und dabei ein besseres Verständnis für die Abläufe in einem modernen Unternehmen zu entwickeln.
+        </p>
+
+        <p>
+            Im Mittelpunkt unserer Arbeit stehen Kreativität, Teamgeist und ein zeitgemäßes Designverständnis. Wir lernen, wie man Produkte präsentiert, Kunden anspricht und gemeinsam im Team Lösungen entwickelt.
+        </p>
+
+        <!-- FASHION BÄR -->
+
+        <div class="about-bear">
+
+            <img src="images/fashionbear.png" alt="Union Fashion Bear">
+
+        </div>
 
     </div>
 
 </section>
+```
+
 
 <!-- MARKETPLACE -->
 
